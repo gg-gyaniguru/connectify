@@ -1,7 +1,7 @@
 import {twMerge as unique} from 'tailwind-merge';
-import {clsx as logic} from 'clsx';
+import {ClassValue as Style, clsx as logic} from 'clsx';
 
-const tailwindcss = (...inputs: any[]) => {
+const tailwindcss = (...inputs: Style[]) => {
     return unique(logic(...inputs));
 }
 
