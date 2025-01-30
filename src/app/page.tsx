@@ -58,9 +58,9 @@ const links: Links[] = [
 const Page = () => {
     return (
         <Container>
-            <div className={tw('py-6 absolute left-0 top-0 right-0 bottom-0 overflow-auto')}>
+            <div className={tw('py-6 absolute left-0 top-0 right-0 bottom-0')}>
                 <div className={tw('text-center')}>connectify</div>
-                <div className={tw('w-fit m-auto')}>
+                <div className={tw('w-fit absolute left-0 top-9 right-0 bottom-6 m-auto')}>
                     <div className={tw('mt-6 flex flex-wrap gap-3.5 items-center justify-center')}>
                         <div className={tw('')}>
                             <Image width={65} height={65} src={'/image.png'} alt={''} priority={true}/>
@@ -70,7 +70,7 @@ const Page = () => {
                             <div className={tw('')}>gg.gyaniguru@gmail.com</div>
                         </div>
                     </div>
-                    <div className={tw('mt-9 flex flex-col gap-3.5')}>
+                    <div className={tw('mt-9 absolute left-0 top-20 right-0 bottom-0 flex flex-col gap-3.5 rounded-xl overflow-auto')}>
                         {
                             links.map(({title, url}) => (
                                 <Link className={tw('w-full px-3 py-1.5 text-center rounded-xl bg-white/15')} href={url} target={'_blank'} key={title}>{title}</Link>
